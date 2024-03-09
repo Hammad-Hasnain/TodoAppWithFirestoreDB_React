@@ -1,0 +1,151 @@
+.mainDiv {
+    height: 600px;
+    /* border: 2px solid black; */
+    width: max-content;
+    margin: auto;
+}
+
+.inp {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000b8;
+    margin-right: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+    /* font-family: ; */
+    font-size: 16px;
+    /* font-style: italic; */
+    /* max-width:500px ; */
+    width: 500px;
+}
+
+.addBtn {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    background-color: #fff;
+    color: chocolate;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: chocolate;
+
+
+}
+
+
+.todoItem {
+    /* padding: 0 4px; */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    /* box-shadow: -1px -11px 17px -3px rgba(0,0,0,0.52) inset;
+-webkit-box-shadow: -1px -11px 17px -3px rgba(0,0,0,0.52) inset;
+-moz-box-shadow: -1px -11px 17px -3px rgba(0,0,0,0.52) inset; */
+}
+
+
+
+.todoItem>:nth-child(even) {
+    padding: 3px;
+    /* transform: skew(9deg, 0deg); */
+    /* border: 1px solid #000; */
+}
+
+.todoItem>:nth-child(odd) {
+    /* box-shadow: 0 0 10px; */
+    padding: 3px;
+    /* transform: skew(-9deg, 0deg); */
+    /* margin: 1px 0 0 0; */
+    /* border: 1px solid #000; */
+}
+
+.li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 7px black;
+    /* border: none !important; */
+    border-right: 1px solid balck;
+    border-left: 1px solid balck;
+}
+
+.liBtn {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.liBtn:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+
+}
+
+
+
+
+.todo {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    font-size: 3em;
+}
+
+
+.logOut {
+
+
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    /* transform: rotate3d(0, 194, 22, 177deg); */
+    /* transform: rotate(135deg); */
+    height: 35px;
+    width: 35px;
+    transition: 0.3s;
+}
+
+.logOut:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    background-color: whitesmoke;
+    /* padding: 6px; */
+    border-radius: 50%;
+    /* height: 35px;
+    width: 35px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:420px) {
+    .inp {
+        width: 150px;
+        /* width: 95vh; */
+    }
+
+
+}
+
+@media (min-width:421px) and (max-width:619px) {
+
+
+    .inp {
+        width: 300px;
+    }
+
+}
